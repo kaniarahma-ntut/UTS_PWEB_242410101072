@@ -45,32 +45,6 @@ class PageController extends Controller
         return view('pengelolaan', ['jadwal' => $jadwalStreaming, 'username' => $username]);
     }
 
-    public function tambahJadwal(Request $request)
-    {
-        $request->validate([
-            'hari' => 'required',
-            'jam' => 'required',
-            'game' => 'required',
-            'tipe' => 'required',
-        ]);
-
-        $jadwalLama = session()->get('jadwal_list', [
-            ['hari' => 'Senin', 'jam' => '19:00', 'game' => 'Valorant', 'tipe' => 'Competitive'],
-            ['hari' => 'Rabu', 'jam' => '20:00', 'game' => 'Minecraft', 'tipe' => 'Chill Stream'],
-        ]);
-
-        $jadwalBaru = [
-            'hari' => $request->hari,
-            'jam' => $request->jam,
-            'game' => $request->game,
-            'tipe' => $request->tipe,
-        ];
-
-        $jadwalLama[] = $jadwalBaru;
-        session()->put('jadwal_list', $jadwalLama);
-
-        return redirect()->route('pengelolaan')->with('success', 'Jadwal berhasil ditambahkan!');
-    }
 
 
     public function showProfile(Request $request)

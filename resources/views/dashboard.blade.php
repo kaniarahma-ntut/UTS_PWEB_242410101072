@@ -52,16 +52,16 @@
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div class="bg-ken-dark rounded-lg p-2 border border-ken-teal/20 transform hover:scale-105 transition-transform">
-                <img src="{{ asset('.../.../.../public/fanart1.jpg') }}" alt="Fanart 1" class="w-full aspect-square object-cover rounded-md">
+                <img src="{{ asset('fanart/fanart1.png') }}" alt="Fanart 1" class="w-full aspect-square object-cover rounded-md" title="Made By Valiant">
             </div>
             <div class="bg-ken-dark rounded-lg p-2 border border-ken-teal/20 transform hover:scale-105 transition-transform">
-                <img src="{{ asset('fanart2.jpg') }}" alt="Fanart 2" class="w-full aspect-square object-cover rounded-md">
+                <img src="{{ asset('fanart/fanart2.png') }}" alt="Fanart 2" class="w-full aspect-square object-cover rounded-md" title="Made By Valiant">
             </div>
             <div class="bg-ken-dark rounded-lg p-2 border border-ken-teal/20 transform hover:scale-105 transition-transform">
-                <img src="{{ asset('fanart3.jpg') }}" alt="Fanart 3" class="w-full aspect-square object-cover rounded-md">
+                <img src="{{ asset('fanart/fanart3.png') }}" alt="Fanart 3" class="w-full aspect-square object-cover rounded-md"title="Made By Aru">
             </div>
             <div class="bg-ken-dark rounded-lg p-2 border border-ken-teal/20 transform hover:scale-105 transition-transform">
-                <img src="{{ asset('fanart4.jpg') }}" alt="Fanart 4" class="w-full aspect-square object-cover rounded-md">
+                <img src="{{ asset('fanart/fanart4.jpg') }}" alt="Fanart 4" class="w-full aspect-square object-cover rounded-md" title="Made By Aru">
             </div>
         </div>
     </div>
