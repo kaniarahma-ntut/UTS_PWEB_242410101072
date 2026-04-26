@@ -10,6 +10,7 @@
             <p class="text-ken-sand font-body text-sm">Grab your coffee, let's play some games.</p>
         </div>
         <form action="{{ route('login') }}" method="POST" class="space-y-6">
+
             @csrf
             <div>
                 <label for="username" class="block text-sm font-medium text-ken-light mb-2 font-body">Username</label>
@@ -19,6 +20,13 @@
                 <label for="password" class="block text-sm font-medium text-ken-light mb-2 font-body">Password</label>
                 <input type="password" name="password" id="password" required class="w-full px-4 py-3 bg-ken-bg border border-ken-teal/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-ken-teal text-ken-light font-p transition-all placeholder-gray-500" placeholder="••••••••">
             </div>
+
+            @if(session('error'))
+                <div class="mb-4 p-3 bg-red-500/20 border border-red-500 rounded text-red-200 text-sm font-body text-center">
+                    {{ session('error') }}
+                </div>
+            @endif
+            
             <button type="submit" class="w-full bg-ken-teal hover:bg-teal-500 text-ken-bg font-bold py-3 px-4 rounded-lg transition-all transform hover:-translate-y-1 shadow-xl">
                 Login to Dashboard
             </button>
