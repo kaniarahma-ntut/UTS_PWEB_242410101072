@@ -6,5 +6,6 @@ Route::get('/', [PageController::class, 'showLogin'])->name('showLogin');
 Route::post('/formLogin', [PageController::class, 'login'])->name('login');
 Route::get('/dashboard', [PageController::class, 'showDashboard'])->name('dashboard');
 Route::get('/pengelolaan', [PageController::class, 'showPengelolaan'])->name('pengelolaan');
+Route::post('/pengelolaan/tambah', [PageController::class, 'tambahJadwal'])->name('tambahJadwal');
 Route::get('/profile', [PageController::class, 'showProfile'])->name('profile');
 Route::get('/logout', [PageController::class, 'logout'])->name('logout');

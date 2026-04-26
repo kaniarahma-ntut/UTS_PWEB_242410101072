@@ -38,21 +38,48 @@ class PageController extends Controller
     {
         $username = $request->query('username', 'Guest');
         $jadwalStreaming = [
-            ['hari' => 'Senin', 'jam' => '19:00', 'game' => 'Valorant', 'tipe' => 'Competitive'],
-            ['hari' => 'Rabu', 'jam' => '20:00', 'game' => 'Minecraft', 'tipe' => 'Chill Stream'],
-            ['hari' => 'Jumat', 'jam' => '21:00', 'game' => 'Elden Ring', 'tipe' => 'Playthrough'],
-            ['hari' => 'Sabtu', 'jam' => '19:30', 'game' => 'Just Chatting', 'tipe' => 'QnA & Review'],
+            ['hari' => 'Senin', 'jam' => '18:30', 'game' => 'Monster Hunter World', 'tipe' => 'Grinding'],
+            ['hari' => 'Rabu', 'jam' => '20:00', 'game' => 'Wuthering Waves', 'tipe' => 'ToA (Endgame)'],
+            ['hari' => 'Jumat', 'jam' => '18:30', 'game' => 'Arknights: Endfield', 'tipe' => 'Story'],
         ];
         return view('pengelolaan', ['jadwal' => $jadwalStreaming, 'username' => $username]);
     }
+
+    public function tambahJadwal(Request $request)
+    {
+        $request->validate([
+            'hari' => 'required',
+            'jam' => 'required',
+            'game' => 'required',
+            'tipe' => 'required',
+        ]);
+
+        $jadwalLama = session()->get('jadwal_list', [
+            ['hari' => 'Senin', 'jam' => '19:00', 'game' => 'Valorant', 'tipe' => 'Competitive'],
+            ['hari' => 'Rabu', 'jam' => '20:00', 'game' => 'Minecraft', 'tipe' => 'Chill Stream'],
+        ]);
+
+        $jadwalBaru = [
+            'hari' => $request->hari,
+            'jam' => $request->jam,
+            'game' => $request->game,
+            'tipe' => $request->tipe,
+        ];
+
+        $jadwalLama[] = $jadwalBaru;
+        session()->put('jadwal_list', $jadwalLama);
+
+        return redirect()->route('pengelolaan')->with('success', 'Jadwal berhasil ditambahkan!');
+    }
+
 
     public function showProfile(Request $request)
     {
         $username = $request->query('username', 'Guest');
         $profileData = [
-            'nama' => 'Ken',
-            'role' => 'Casual College Gamer',
-            'bio' => 'Mahasiswa semester 4 yang hobi ngegame sambil ngopi. Stream buat seneng-seneng dan ngisi waktu luang setelah nugas.',
+            'nama' => 'Website Personal Ken',
+            'role' => 'Mahasiswa Livestreamer',
+            'bio' => 'Sedang menempuh semester 4 perkuliahan. Mohon doanya agar tetap bisa live 🙏',
         ];
         return view('profile', ['username' => $username, 'profileData' => $profileData]);
     }
@@ -61,4 +88,5 @@ class PageController extends Controller
     {
         return redirect()->route('showLogin');
     }
+
 }
