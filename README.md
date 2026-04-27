@@ -1,58 +1,32 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# UTS_PWEB_242410101072
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Penjelasan Singkat Web
+Proyek ini adalah sebuah aplikasi berbasis web berupa **Streamer Dashboard / Personal Gaming Portfolio**. Web ini dirancang untuk menampilkan konten-konten menarik seputar aktivitas streaming dan jadwal streaming. 
 
-## About Laravel
+Fitur utama dan halaman pada web ini meliputi:
+- **Autentikasi:** Sistem login dan logout untuk keamanan akses.
+- **Dashboard Streamer:** Halaman utama yang menampilkan sapaan kepada pengguna, klip video highlight (terintegrasi dengan YouTube), galeri fanart dari komunitas, dan ulasan game (seperti *A Space For The Unbound* dan *Undertale*).
+- **Pengelolaan & Profil:** Halaman khusus untuk manajemen konten dan melihat profil pengguna.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Aplikasi ini dibangun menggunakan framework Laravel dengan Blade templating engine.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Screenshot Web
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 1. Halaman Login
+<img width="1901" height="896" alt="image" src="https://github.com/user-attachments/assets/4ecedfa3-6d95-46c1-9d8b-1a5db9ad47e6" />
 
-## Learning Laravel
+### 2. Halaman Dashboard (Clips & Highlights)
+<img width="1900" height="804" alt="image" src="https://github.com/user-attachments/assets/7c917f55-7b1f-40ee-8429-0fa31aea8d55" />
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 3. Halaman Dashboard (Fanart & Reviews)
+<img width="1899" height="405" alt="image" src="https://github.com/user-attachments/assets/9338112c-4c0b-46b9-9739-d577a9ff226f" />
+<img width="1904" height="706" alt="image" src="https://github.com/user-attachments/assets/893a8eef-fb2b-4b95-b55d-73c546bcf312" />
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 4. Halaman Pengelolaan
+<img width="1919" height="885" alt="image" src="https://github.com/user-attachments/assets/09b61d89-d962-4e11-a45a-df4853932b1a" />
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+### 5. Halaman Profile
+<img width="1919" height="885" alt="image" src="https://github.com/user-attachments/assets/b50a8da9-abbb-4888-b8bf-7fcc26af6ea1" />
 
-## Agentic Development
-
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
-
-```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
-```
-
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+*Dibuat untuk memenuhi tugas Ujian Tengah Semester Pemrograman Web.*
