@@ -26,7 +26,7 @@ Aplikasi ini dibangun menggunakan framework Laravel dengan Blade templating engi
 <img width="1919" height="885" alt="image" src="https://github.com/user-attachments/assets/09b61d89-d962-4e11-a45a-df4853932b1a" />
 
 ### 5. Halaman Profile
-<img width="1919" height="885" alt="image" src="https://github.com/user-attachments/assets/b50a8da9-abbb-4888-b8bf-7fcc26af6ea1" />
+<img width="1919" height="898" alt="image" src="https://github.com/user-attachments/assets/582955f1-bcd6-417f-be43-8a24f88b404f" />
 
 ---
 *Dibuat untuk memenuhi tugas Ujian Tengah Semester Pemrograman Web.*
